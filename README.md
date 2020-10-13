@@ -1,6 +1,6 @@
 # Useful Functions 
 
-* Expression Marker Selection *
+* Expression Marker Selection * 
 This project introduces genetic variable selection by a two-fold selection process: 
 1) Apply principle component analysis to select genes with hihgest loadgins in the top components that explain over 90% of the variance  
 2) Apply lasso regression for selected features against the outcome of interest (categorical and continuous)
