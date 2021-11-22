@@ -1,12 +1,14 @@
-# Useful Functions 
+# Bioinformatics Pipeline
 
-##  Expression Marker Selection  
-This project introduces genetic variable selection by a two-fold selection process: 
-### 1) Apply principle component analysis to select genes with hihgest loadgins in the top components that explain over 90% of the variance  
-### 2) Apply lasso regression for selected features against the outcome of interest (categorical and continuous)
+## [DNA methylation calling to infer genomic clock]()
+- Streamlined ribosomal DNA methylation (rDNAm) clock pipeline (Lemos and Wang, 2019) including 
+  - data processing and quality control with reduced representation bisulfite sequencing data
+  - applying Bismark to conduct methylation extraction to estimate rDNAm age
+- Applied rDNAm pipeline to reprogramming stem cells at different time points and followed up with RNA-seq data to identify reprogramming markers that could cause less successful reprogramming states
 
-## Parallelized Computation 
-This function applies a pre-defined function (regression for pairwise features of interest) to all the cores avaialable in the machine in order to execute non-sequential functions all at once.
-
-## Manage Gene Set Enrichment Leading Edge Genes
-This function is written to read in a compiled list of genesets for Gene Set Enrichment Analysis (https://www.gsea-msigdb.org/gsea/index.jsp) and include all member genes in the genesets. This is particularly useful for enrichment analysis on the gene level rather than the gene set level.
+## [Parallelized Computation for pairwise regression analysis](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/multiple_linear_regression_parallel.R)
+- Streamlined parallel computation script to incorporate pre-defined objective functions (regression for pairwise features of interest) 
+ 
+## [Rapid inference for leading edge genes from gene set enrichment analysis](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/gsea_save.R)
+- compiled list of genesets for Gene Set Enrichment Analysis (https://www.gsea-msigdb.org/gsea/index.jsp) and included all member genes in the genesets.
+- Useful for enrichment analysis on the second-layer gene level enrichment 
