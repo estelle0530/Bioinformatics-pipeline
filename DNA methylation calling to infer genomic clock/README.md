@@ -3,8 +3,11 @@
 ## Data processing pipeline 
 
 [bismark_genome.sh](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/DNA%20methylation%20calling%20to%20infer%20genomic%20clock/bismark_genome.sh) : Bismark prepare genome step run only once for all samples
+
 [single_script.sh](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/DNA%20methylation%20calling%20to%20infer%20genomic%20clock/single_script.sh) : fastq dump for single SRR file
+
 [all_file.sh](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/DNA%20methylation%20calling%20to%20infer%20genomic%20clock/all_file.sh) : call single_script.sh for parallel downloads of a list of SRR files
+
 [final_pipeline.sh](https://github.com/estelleyao0530/Bioinformatics-pipeline/blob/main/DNA%20methylation%20calling%20to%20infer%20genomic%20clock/final_pipeline.sh) : scripted functions for all data processing packages required to generate coverage file
 
 **The last scripts must run in the the same directory where Bismark 0.23.0 is downloaded**
